@@ -1,0 +1,127 @@
+baseURL = "http://mumara1.shahbaz.dev1.hostingshouse.com/"
+languageCode = "en-us"
+title = "Mumara"
+theme = "minimal"
+disqusShortname = "username" # delete this to disable disqus comments
+googleAnalytics = ""
+
+[params]
+    author = "Wasif Ahmed"
+    description = "Email Marketing Automation"
+    githubUsername = "#"
+    accent = "red"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "default"
+    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+
+[[menu.main]]
+    name = "Home"
+    weight = 1
+    url = "/"
+    custom_css = ["scss/home.scss"]
+[[menu.main]]
+    identifier = "app"
+    name = "App"
+    weight = 2
+    url = "#"
+[[menu.main]]
+    name = "One"
+    weight = 1
+    url = "/one/"
+    parent = "app"
+[[menu.main]]
+    name = "Campaigns"
+    weight = 2
+    url = "/campaigns/"
+    parent = "app"
+[[menu.main]]
+    name = "SMS"
+    weight = 3
+    url = "/sms/"
+    parent = "app"
+[[menu.main]]
+    name = "SMS+"
+    weight = 4
+    url = "/smsplus/"
+    parent = "app"
+[[menu.main]]
+    name = "Classic Pro"
+    weight = 5
+    url = "/classic/"
+    parent = "app"
+[[menu.main]]
+    name = "Classic ESP"
+    weight = 6
+    url = "/classic-esp/"
+    parent = "app"
+[[menu.main]]
+    identifier = "recources"
+    name = "Recources"
+    weight = 3
+    url = "#"
+[[menu.main]]
+    name = "Mumara Business School"
+    weight = 1
+    url = "https://www.school.mumara.com"
+    parent = "recources"
+[[menu.main]]
+    name = "Documentation"
+    weight = 2
+    url = "https://docs.mumara.com"
+    parent = "recources"
+[[menu.main]]
+    name = "Blog"
+    weight = 3
+    url = "/blog/"
+    parent = "recources"
+[[menu.main]]
+    name = "Community"
+    weight = 4
+    url = "https://community.mumara.com"
+    parent = "recources"
+[[menu.main]]
+    name = "Contact"
+    weight = 4
+    url = "/contact-us"
+
+[[menu.main]]
+    name = "My Account"
+    weight = 5
+    url = "https://billing.mumara.com/"
+
+[[menu.main]]
+    name = "About us"
+    weight = 6
+    url = "/about-us"
+
+# Social icons to be shown on the right-hand side of the navigation bar.
+# The "name" field should match the name of the icon in Font Awesome.
+# The list of available icons can be found at http://fontawesome.io/icons.
+
+[[menu.icon]]
+    url = "mailto:me@example.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/username/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/username/"
+    name = "twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/username/"
+    name = "linkedin"
+    weight = 4
+
+[[menu.icon]]
+    url = "https://www.stackoverflow.com/username/"
+    name = "stack-overflow"
+    weight = 5
